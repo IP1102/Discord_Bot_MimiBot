@@ -30,12 +30,12 @@ var appreciationArray=[
 ]
 
 client.on('message',(msg)=>{
-    if (msg.content.toLowerCase().includes('saronee')||msg.content.toLowerCase().includes('bublee')) {
+    if (msg.content.toLowerCase().includes('bublee')) {
         index = Math.floor(Math.random()*appreciationArray.length)
         msg.channel.send(`Saronee is ${appreciationArray[index]}!`)
     }
 
-    if (msg.content.toLowerCase().includes('jessica')||msg.content.toLowerCase().includes('jess_ica')) {
+    if (msg.content.toLowerCase().includes('jess_ica')) {
         index = Math.floor(Math.random()*abuseArray.length)
         msg.channel.send(`Jessica is ${abuseArray[index]}!`)
     }
